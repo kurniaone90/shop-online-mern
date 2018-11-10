@@ -38,6 +38,11 @@ Membuat Collection baru : pages
 
 #### Auto Start Server
 On Mac & Linux 
-	npm install -g linux
-On Windows
+	npm install -g nodemon
+
+
+#### 4. Materi 4 Route
+	Membuat Folder Routes
+
+#### Membuat route pada Admin Area
 	

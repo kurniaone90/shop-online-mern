@@ -24,14 +24,13 @@ app.set("view engine", "ejs");
 // Setup public folder
 app.use(express.static(path.join(__dirname, "public")));
 
+// Set Routes
+var pages = require("./routes/pages.js");
+var adminpages = require("./routes/admin/adminpages.js");
+app.use("/", pages);
+app.use("/admin/pages", adminpages);
 
-// Setup Ind
-app.get('/', function(req, res){
-	// res.send("Welcome To Kambing");
-	res.render("index", {
-		title: "Home"
-	});
-});
+
 
 var port = 3000;
 app.listen(port, function() {
